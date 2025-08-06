@@ -1,7 +1,7 @@
 # Greenhouse Gas Emissions: Analysis & Forecasting
 
 This project analyzes the Our World in Data (OWID) CO₂ and greenhouse gas emissions dataset to extract insights and build forecasting models. The primary goal was to explore the historical trends of greenhouse gases (CO₂, CH₄, N₂O) and their relationship with temperature, population, and GDP, and to apply time series forecasting models.
-This is my first time series project, and the primary focus was on learning the foundational concepts and building end-to-end pipelines for exploratory analysis and forecasting.
+This is my first time series project, and the primary focus was on learning the foundational concepts and building end-to-end pipelines for exploratory analysis and forecasting. This project only explores univariant time series analysis.
 
 ## About the data
 The project uses the dataset “CO₂ and Greenhouse Gas Emissions” sourced from the websites [World Bank Group Data 360](https://data360.worldbank.org/en/dataset/OWID_CB) ([GitHub Page](https://github.com/owid/co2-data)). The dataset captures an extensive list of datapoints, however for the scope of the project we focus on the following:
@@ -21,7 +21,10 @@ PowerBI served as a powerful tool in quickly exploring the dataset and provided 
 |Decision-making support| (1) Calculate contribution % to identify which country to focus on; (2) Prioritize focus based the contributions; (3) Encourages deeper analysis of countries with lower emissions|
 
 ### Calculating contribution %
-Added the [GISTEMP v4 Annual temperature anomalies](https://data.giss.nasa.gov/gistemp/) to the existing OWID data to obtain the contribution %. The OWID temperature change columns made it easy, so the below simple formulae sufficed:
+Added the [GISTEMP v4 Annual temperature anomalies](https://data.giss.nasa.gov/gistemp/) to the existing OWID data to obtain the contribution %. 
+<img width="714" height="426" alt="image" src="https://github.com/user-attachments/assets/47bef4ae-aacd-4691-96c9-a9dbd96c0a9d" />
+
+The OWID temperature change columns made it easy, so the formulae listed below sufficed:
 ```
 GHG contribution % = OWID(temperature_change_from_ghg per year)/ GISTEMP(annual_temperature per year) * 100
 
