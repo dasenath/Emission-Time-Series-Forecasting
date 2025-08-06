@@ -4,7 +4,7 @@ This project analyzes the Our World in Data (OWID) CO₂ and greenhouse gas emis
 This is my first time series project, and the primary focus was on learning the foundational concepts and building end-to-end pipelines for exploratory analysis and forecasting.
 
 ## About the data
-The project uses the dataset “CO₂ and Greenhouse Gas Emissions” sourced from the websites [World Bank Group Data 360] (https://data360.worldbank.org/en/dataset/OWID_CB) ([GitHub Page](https://github.com/owid/co2-data)). The dataset captures an extensive list of datapoints, however for the scope of the project we focus on the following:
+The project uses the dataset “CO₂ and Greenhouse Gas Emissions” sourced from the websites [World Bank Group Data 360](https://data360.worldbank.org/en/dataset/OWID_CB) ([GitHub Page](https://github.com/owid/co2-data)). The dataset captures an extensive list of datapoints, however for the scope of the project we focus on the following:
 |Columns from the dataset|	Analysis - Technology|
 |------------------------|------------------------|
 |Year, temperature change due to CO₂, CH₄ and N₂O|	Times Series Forecasting - Python|
